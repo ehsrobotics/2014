@@ -1,0 +1,45 @@
+\hypertarget{cam_8h}{\section{cam.\-h File Reference}
+\label{cam_8h}\index{cam.\-h@{cam.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cam_8h_a8de598dafdddf5af0ca24828a301102c}{quadratic\-Acceleration} (int input)
+\begin{DoxyCompactList}\small\item\em Converts controller values into motor values on a quadratic curve. \end{DoxyCompactList}\item 
+int \hyperlink{cam_8h_a2aff7e20f4a2eb27d467cf395a8b089e}{validate\-Speed} (int speed)
+\begin{DoxyCompactList}\small\item\em Ensures that the speed is between 127 and -\/127. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cam_8h_a8de598dafdddf5af0ca24828a301102c}{\index{cam.\-h@{cam.\-h}!quadratic\-Acceleration@{quadratic\-Acceleration}}
+\index{quadratic\-Acceleration@{quadratic\-Acceleration}!cam.h@{cam.\-h}}
+\subsubsection[{quadratic\-Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}int quadratic\-Acceleration (
+\begin{DoxyParamCaption}
+\item[{int}]{input}
+\end{DoxyParamCaption}
+)}}\label{cam_8h_a8de598dafdddf5af0ca24828a301102c}
+
+
+Converts controller values into motor values on a quadratic curve. 
+
+Takes a value between -\/127 and 127. It outputs an int between -\/127 and 127 based on a quadratic curve. The equation is y = (1/127)x$^\wedge$2 
+\begin{DoxyParams}{Parameters}
+{\em input} & input from the controller (an int between -\/127 and 127) \\
+\hline
+\end{DoxyParams}
+\hypertarget{cam_8h_a2aff7e20f4a2eb27d467cf395a8b089e}{\index{cam.\-h@{cam.\-h}!validate\-Speed@{validate\-Speed}}
+\index{validate\-Speed@{validate\-Speed}!cam.h@{cam.\-h}}
+\subsubsection[{validate\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}int validate\-Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}}\label{cam_8h_a2aff7e20f4a2eb27d467cf395a8b089e}
+
+
+Ensures that the speed is between 127 and -\/127. 
+
+If the speed is greater than 127, 127 is returned. If the speed is less than -\/127, -\/127 is returned. Otherweise, the original speed is returned. 
+\begin{DoxyParams}{Parameters}
+{\em speed} & The speed to be assigned to the motor. \\
+\hline
+\end{DoxyParams}

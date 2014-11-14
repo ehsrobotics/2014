@@ -1,0 +1,75 @@
+\hypertarget{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h}{\section{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).h File Reference}
+\label{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h}\index{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_a8de598dafdddf5af0ca24828a301102c}{quadratic\-Acceleration} (int input)
+\begin{DoxyCompactList}\small\item\em Converts controller values into motor values on a quadratic curve. \end{DoxyCompactList}\item 
+void \hyperlink{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_ae4b7aacebe402774beba8907e20c7d0e}{move} (int power, int \hyperlink{no_more_tank_mode_8c_aaefa47f4fdf865c2358c22b542a993e4}{turn})
+\begin{DoxyCompactList}\small\item\em Moves the robot forward or backwards at {\ttfamily power} with the specified turn. \end{DoxyCompactList}\item 
+void \hyperlink{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_a28bc208dd43c4efebd58e7b1937284f8}{stop\-Moving} ()
+\begin{DoxyCompactList}\small\item\em Stops all motors that move the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_ae4b7aacebe402774beba8907e20c7d0e}{\index{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}!move@{move}}
+\index{move@{move}!ehs (cam-xp-laptop's conflicted copy 2014-02-08).h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void move (
+\begin{DoxyParamCaption}
+\item[{int}]{power, }
+\item[{int}]{turn}
+\end{DoxyParamCaption}
+)}}\label{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_ae4b7aacebe402774beba8907e20c7d0e}
+
+
+Moves the robot forward or backwards at {\ttfamily power} with the specified turn. 
+
+\par
+ \begin{TabularC}{2}
+\hline
+To move forward, set {\ttfamily power} to an integer &{\bfseries 1 to 127} \\\cline{1-2}
+To stop, set {\ttfamily power} to &{\bfseries 0}\newline
+ \\\cline{1-2}
+To move backwards, set {\ttfamily power} to an integer &{\bfseries -\/1 to -\/127} \\\cline{1-2}
+\end{TabularC}
+\par
+ \begin{TabularC}{2}
+\hline
+To go straight, set {\ttfamily turn} to &{\bfseries 0} \\\cline{1-2}
+To turn, set {\ttfamily turn} to an integer &{\bfseries -\/127 to 127} \\\cline{1-2}
+\end{TabularC}
+
+\begin{DoxyParams}{Parameters}
+{\em power} & The power of the motors \\
+\hline
+{\em turn} & How much the robot turns. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_a8de598dafdddf5af0ca24828a301102c}{\index{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}!quadratic\-Acceleration@{quadratic\-Acceleration}}
+\index{quadratic\-Acceleration@{quadratic\-Acceleration}!ehs (cam-xp-laptop's conflicted copy 2014-02-08).h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}}
+\subsubsection[{quadratic\-Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}int quadratic\-Acceleration (
+\begin{DoxyParamCaption}
+\item[{int}]{input}
+\end{DoxyParamCaption}
+)}}\label{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_a8de598dafdddf5af0ca24828a301102c}
+
+
+Converts controller values into motor values on a quadratic curve. 
+
+Takes a value between -\/127 and 127. It outputs an int between -\/127 and 127 based on a quadratic curve. The equation is $y = \frac{1}{127}x^2$ 
+\begin{DoxyParams}{Parameters}
+{\em input} & input from the controller (an int between -\/127 and 127) \\
+\hline
+\end{DoxyParams}
+\hypertarget{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_a28bc208dd43c4efebd58e7b1937284f8}{\index{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}!stop\-Moving@{stop\-Moving}}
+\index{stop\-Moving@{stop\-Moving}!ehs (cam-xp-laptop's conflicted copy 2014-02-08).h@{ehs (cam-\/xp-\/laptop's conflicted copy 2014-\/02-\/08).\-h}}
+\subsubsection[{stop\-Moving}]{\setlength{\rightskip}{0pt plus 5cm}void stop\-Moving (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ehs_01_07cam-xp-laptop's_01conflicted_01copy_012014-02-08_08_8h_a28bc208dd43c4efebd58e7b1937284f8}
+
+
+Stops all motors that move the robot. 
+

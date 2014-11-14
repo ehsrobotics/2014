@@ -1,0 +1,64 @@
+\hypertarget{_actual_competition1_8c}{\section{Actual\-Competition1.\-c File Reference}
+\label{_actual_competition1_8c}\index{Actual\-Competition1.\-c@{Actual\-Competition1.\-c}}
+}
+{\ttfamily \#include \char`\"{}Vex\-\_\-\-Competition\-\_\-\-Includes.\-c\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ehs.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_actual_competition1_8c_a2682bd0e6b87fc110fb4a0d6632ffa02}{move\-Lift} (int power)
+\begin{DoxyCompactList}\small\item\em Moves the lift at a specified power. \end{DoxyCompactList}\item 
+void \hyperlink{_actual_competition1_8c_ab532f0b1474225e81ebd23b2d05f7c11}{pre\-\_\-auton} ()
+\begin{DoxyCompactList}\small\item\em Code executed before autonomous. \end{DoxyCompactList}\item 
+task \hyperlink{_actual_competition1_8c_a371bbbbc61aa430884cb77eb56b3df53}{autonomous} ()
+\begin{DoxyCompactList}\small\item\em Code to be executed during the 15 second autonomous period. \end{DoxyCompactList}\item 
+task \hyperlink{_actual_competition1_8c_a99a39462aa5b36444a05e4b22d8720b3}{usercontrol} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_actual_competition1_8c_a371bbbbc61aa430884cb77eb56b3df53}{\index{Actual\-Competition1.\-c@{Actual\-Competition1.\-c}!autonomous@{autonomous}}
+\index{autonomous@{autonomous}!ActualCompetition1.c@{Actual\-Competition1.\-c}}
+\subsubsection[{autonomous}]{\setlength{\rightskip}{0pt plus 5cm}task autonomous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_actual_competition1_8c_a371bbbbc61aa430884cb77eb56b3df53}
+
+
+Code to be executed during the 15 second autonomous period. 
+
+\hypertarget{_actual_competition1_8c_a2682bd0e6b87fc110fb4a0d6632ffa02}{\index{Actual\-Competition1.\-c@{Actual\-Competition1.\-c}!move\-Lift@{move\-Lift}}
+\index{move\-Lift@{move\-Lift}!ActualCompetition1.c@{Actual\-Competition1.\-c}}
+\subsubsection[{move\-Lift}]{\setlength{\rightskip}{0pt plus 5cm}void move\-Lift (
+\begin{DoxyParamCaption}
+\item[{int}]{power}
+\end{DoxyParamCaption}
+)}}\label{_actual_competition1_8c_a2682bd0e6b87fc110fb4a0d6632ffa02}
+
+
+Moves the lift at a specified power. 
+
+Sets motor\mbox{[}lift1\mbox{]} and motor\mbox{[}lift2\mbox{]} to {\ttfamily power} 
+\begin{DoxyParams}{Parameters}
+{\em power} & The power to set the motor to. Should be an integer between 127 and -\/127 \\
+\hline
+\end{DoxyParams}
+\hypertarget{_actual_competition1_8c_ab532f0b1474225e81ebd23b2d05f7c11}{\index{Actual\-Competition1.\-c@{Actual\-Competition1.\-c}!pre\-\_\-auton@{pre\-\_\-auton}}
+\index{pre\-\_\-auton@{pre\-\_\-auton}!ActualCompetition1.c@{Actual\-Competition1.\-c}}
+\subsubsection[{pre\-\_\-auton}]{\setlength{\rightskip}{0pt plus 5cm}void pre\-\_\-auton (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_actual_competition1_8c_ab532f0b1474225e81ebd23b2d05f7c11}
+
+
+Code executed before autonomous. 
+
+Usually includes resetting encoders, setting servos, etc. \hypertarget{_actual_competition1_8c_a99a39462aa5b36444a05e4b22d8720b3}{\index{Actual\-Competition1.\-c@{Actual\-Competition1.\-c}!usercontrol@{usercontrol}}
+\index{usercontrol@{usercontrol}!ActualCompetition1.c@{Actual\-Competition1.\-c}}
+\subsubsection[{usercontrol}]{\setlength{\rightskip}{0pt plus 5cm}task usercontrol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_actual_competition1_8c_a99a39462aa5b36444a05e4b22d8720b3}
